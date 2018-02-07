@@ -48,6 +48,7 @@ aside h2{
 aside ul{
   text-align: center;
   margin-left: 20px;
+  list-style-position: inside;
 }
 
 #content{
