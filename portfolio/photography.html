@@ -1,25 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title> Yaojia Hua Photography </title>
+  <title> Yaojia Hua Portfolio </title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style2.css" charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="css/style.css" charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css" charset="UTF-8">
 </head>
 <body>
+  <a href="#main-content" class="skip">Skip navigation</a>
   <header>
     <nav id = "top-nav" class="top-nav">
-      <div class="logo">
+			<div class="logo">
         <a href="index.html"> <img src="img/HUA.png" alt="yaojia's logo"></a>
       </div>
       <ul>
-        <li><a href="index.html">Work</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a class="current-page" href="photography.html">Photography</a></li>
+        <li><a href="travel.html">Travel</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <h2>More photography here:</h2>
+
+<!-- slideshow gallery -->
+<div id="main-content" class="main-content main-content-home">
+  <section class="crafts">
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="img/tokyo.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="img/a2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="img/edinburg.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="img/sf.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="img/london.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="img/shanghai.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/tokyo.jpg" style="width:100%" onclick="currentSlide(1)" alt="Tokyo">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/a2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Ann Arbor">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/edinburg.jpg" style="width:100%" onclick="currentSlide(3)" alt="Edinburg">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/sf.jpg" style="width:100%" onclick="currentSlide(4)" alt="San Francisco">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/london.jpg" style="width:100%" onclick="currentSlide(5)" alt="London">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/shanghai.jpg" style="width:100%" onclick="currentSlide(6)" alt="Shanghai">
+    </div>
+  </div>
+</div>
+</section>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
 </body>
+</html>
