@@ -6,6 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="css/style.css" charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css" charset="UTF-8">
+  <script>
+  function menu() {
+     var x = document.getElementById("dropdown");
+     if (x.style.display === "none") {
+         x.style.display = "block";
+     } else {
+         x.style.display = "none";
+     }
+ }
+ </script>
+<style>
+#image{
+    	/* line-height:325px; */
+		  width: 500px;
+    	height: 500px;
+		  /* border:5px solid black; */
+		  margin:0 auto;
+    	background-repeat: no-repeat;
+    	/* color:#FFFFFF; */
+    	text-align: center;
+    	/* background-color: #8e68ff; */
+    	background-size: 100%;
+    	margin-top:50px;
+      margin-bottom: 100px;
+    	font-size:150%;
+	}
+  .text {
+    color: #FF6969;
+  }
+  a{
+    color: #FF6969;
+  }
+  </style>
+
 </head>
 <body>
   <header>
@@ -13,23 +47,30 @@
       <div class="logo">
         <a href="index.html"> <img src="img/HUA.png" alt="yaojia's logo"></a>
       </div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="photography.html">Photography</a></li>
-        <li><a href="travel.html">Travel</a></li>
-        <li><a class="current-page" href="about.html">About</a></li>
-      </ul>
+      <img class="menu" src="img/menu.png" onclick="menu()">
+      <div id="dropdown">
+        <ul>
+          <li><a class="current-page" href="index.html">Home</a></li>
+          <li><a href="photography.html">Photography</a></li>
+          <li><a href="travel.html">Travel</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
   <div id="main-content" class="main-content main-content-home">
     <section class="crafts">
-      <h2>Hi, I'm Yao. I take photographs for fun. Find me on <a href="https://www.flickr.com/photos/137759127@N08/">Flickr</a>, <a href="https://500px.com/huayao_jia?preview=1">500px</a>, and <a href=
+      <h2>Hi, I'm Yao. I take photographs for fun. </h2>
+      <h2>Find me on <a href="https://www.flickr.com/photos/137759127@N08/">Flickr</a>, <a href="https://500px.com/huayao_jia?preview=1">500px</a>, and <a href=
         "https://www.instagram.com/huayao_jia/">Instagram</a>.</h2>
-      <h2>Things I love</h2>
-      <section class = "text">travel</section>
-        museums, dream pop, sushi, pugs.
-    </section>
+      <h2>Things I love:
+        <span class = "text" src="img/travel.jpg">travel</span>,
+        <span class = "text" src="img/guggenheim.jpg">museums</span>,
+        <span class = "text" src="img/bloom.jpg">dream pop</span>,
+        <span class = "text" src="img/stripes.jpg">stripes</span>,
+        <span class = "text" src="img/sushi.jpg">sushi</span>,
+        <span class = "text" src="img/pug.jpg">pugs</span>.</h2>
     <div id="image"></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -37,7 +78,7 @@
 	$(document).ready(function() {
 		$(".text").on('focus mouseover', function() {
 			// $("#image").text($(this).attr("alt"));
-			$("#image").css('background-image', 'url(img/travel.jpg)');
+			$("#image").css('background-image', 'url("' + $(this).attr("src") +'")');
 		})
 		$(".text").on('blur mouseleave', function() {
 			// $("#image").text("Hover over an image below");

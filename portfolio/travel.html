@@ -6,6 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="css/style.css" charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css" charset="UTF-8">
+  <script>
+  function menu() {
+     var x = document.getElementById("dropdown");
+     if (x.style.display === "none") {
+         x.style.display = "block";
+     } else {
+         x.style.display = "none";
+     }
+ }
+ </script>
 </head>
 <body>
   <header>
@@ -13,12 +23,15 @@
       <div class="logo">
         <a href="index.html"> <img src="img/HUA.png" alt="yaojia's logo"></a>
       </div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="photography.html">Photography</a></li>
-        <li><a class="current-page" href="travel.html">Travel</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
+      <img class="menu" src="img/menu.png" onclick="menu()">
+      <div id="dropdown">
+        <ul>
+          <li><a class="current-page" href="index.html">Home</a></li>
+          <li><a href="photography.html">Photography</a></li>
+          <li><a href="travel.html">Travel</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -27,5 +40,5 @@
       <h3>a video here</h3>
     </section>
   </div>
-  
+
 </body>
