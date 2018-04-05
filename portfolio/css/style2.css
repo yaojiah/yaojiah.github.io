@@ -69,7 +69,7 @@ img {
 /* Container for image text */
 .caption-container {
   text-align: center;
-  background-color: #FFFFFF;
+  background-color: transparent;
   padding: 2px 16px;
   color:#4A4A4A;
 }

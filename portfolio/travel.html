@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title> Yaojia Hua About </title>
+  <title> Travel ~ Yaojia Hua</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="css/style.css" charset="UTF-8">
@@ -16,7 +16,42 @@
      }
  }
  </script>
+ <style>
+ .videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 10px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#main-content h1 {
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 2em;
+}
+
+#main-content h2 {
+  text-align: center;
+}
+
+#main-content p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+ </style>
 </head>
+
 <body>
   <header>
     <nav id = "top-nav" class="top-nav">
@@ -26,19 +61,62 @@
       <img class="menu" src="img/menu.png" onclick="menu()">
       <div id="dropdown">
         <ul>
-          <li><a class="current-page" href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="photography.html">Photography</a></li>
-          <li><a href="travel.html">Travel</a></li>
+          <li><a class="current-page" href="travel.html">Travel</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
+
   <div id="main-content" class="main-content main-content-home">
+  <h1>This February, I took a solo railway trip from<br><a>Ann Arbor</a> to <a>San Francisco</a>.
+    <br><h2>Yes, I know I'm crazy.</h2>
+    <br><br>
+    <div class="videoWrapper">
+      <iframe src="https://player.vimeo.com/video/262669339" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <br><br><br><br>
+
     <section class="crafts">
-      <h3>a video here</h3>
+    <div class="photo-cell">
+     <p>The train I ride is <a href="https://en.wikipedia.org/wiki/California_Zephyr">California Zephyr</a>, which runs daily between Chicago and Emeryville, via Omaha, Denver, Salt Lake City, and Reno.</p>
+      <img class="map" src="img/map.jpg" alt="Map"><br>
+    </div>
+    <div class="photo-cell">
+      <img class="l" src="img/cz/1.jpg" alt="img1"><br>
+    </div>
+    <div class="photo-cell">
+      <img class="r" src="img/cz/2.jpg" alt="img2"><br>
+    </div>
+    <div class="photo-cell">
+      <img class="f" src="img/cz/4.jpg" alt="img4"><br>
+    </div>
+    <div class="photo-cell">
+      <img class="r" src="img/cz/3.jpg" alt="img3"><br>
+    </div>
+    <div class="photo-cell">
+      <img class="l" src="img/cz/5.jpg" alt="img5"><br>
+    </div>
+    <div class="photo-cell">
+      <img class="r" src="img/cz/6.jpg" alt="img6"><br>
+    </div>
+
     </section>
   </div>
+
+  <footer>
+    <div class="footer">
+    <nav>
+      <p><a href="index.html">Home</a>
+      <a href="photography.html">Photography</a>
+      <a href="travel.html">Travel</a>
+      <a href="about.html">About</a></p>
+		</nav>
+		<p>&copy;2018 Yaojia Hua</p>
+  </div>
+	</footer>
 
 </body>

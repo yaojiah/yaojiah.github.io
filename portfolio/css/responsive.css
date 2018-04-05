@@ -1,6 +1,5 @@
-
-
 @media only screen and (min-width: 650px){
+ /* NAVIGATION */
   .menu {
     display: none;
   }
@@ -10,14 +9,107 @@
   .top-nav ul {
     text-align: center;
     background: transparent;
+    top: 32px;
+    right: 5%;
   }
   .top-nav ul li {
     display: inline-block;
   }
+
+ /* Home */
+
+  .photo-cell h1 {
+    text-align: right;
+    font-size: 1.75em;
+  }
+
+
 }
 
+
+
+
 @media only screen and (min-width: 1000px){
+ /* NAVIGATION */
   .top-nav ul {
     text-align: right;
   }
+
+  /* Home */
+  h3 {
+    font-size: 7em;
+  }
+
+
+
+  .photo-cell {
+    margin-bottom: 6%;
+    margin-top: 2%;
+  }
+  .photo-cell .left-img{
+    width: 60%;
+    margin-left: 3%;
+  }
+  .photo-cell .right-img{
+    width: 60%;
+    margin-right: 3%;
+  }
+  .photo-cell h1 {
+    position: absolute;
+    bottom: 32%;
+    font-size: 2.75em;
+  }
+  .photo-cell .right {
+    left:59%;
+    text-align: left;
+  }
+  .photo-cell .left {
+    right:54%;
+    text-align: right;
+  }
+
+  .photo-cell h2 {
+    position: absolute;
+    bottom: 11%;
+    font-size: 2.5em;
+    right:60%;
+  }
+
+
+ /* About */
+ /* .photo-cell .me {
+   width:64%;
+ } */
+
+ /* Travel */
+ #player {
+   width: 50%;
+ }
+
+ .photo-cell p {
+   position: absolute;
+   bottom: 20%;
+   font-size: 1.5em;
+   left:3%;
+   width:36%;
+ }
+
+ .photo-cell .map {
+   width: 55%;
+   margin-right: 3%;
+ }
+ .photo-cell .l {
+   width: 75%;
+   margin-left: 3%;
+ }
+ .photo-cell .r {
+   width: 50%;
+   margin-right: 3%;
+ }
+ .photo-cell .f {
+   width: 94%;
+   margin-right: 3%;
+   margin-left: 3%;
+ }
+
 }

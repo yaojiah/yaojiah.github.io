@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title> Yaojia Hua Portfolio </title>
+  <title> Home ~ Yaojia Hua </title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="css/style.css" charset="UTF-8">
@@ -17,7 +17,36 @@
      }
  }
  </script>
+
+ <style>
+ .megif {
+   width: 30%;
+   position: absolute;
+   left: 35%;
+   margin: 0 auto;
+   padding-bottom: 25%;
+   display: block;
+   z-index: -1;
+ }
+ h3 {
+   text-align: center;
+   padding-top: 5%;
+   padding-bottom: 8%;
+   /* font-size: 4em; */
+   color: #FF6969;
+ }
+ .label a {
+   color: #FFFFFF;
+ }
+ .scroll {
+   text-align: center;
+   padding-bottom: 12%;
+   position: relative;
+   /* margin-left: 0 auto; */
+ }
+ </style>
 </head>
+
 <body>
   <a href="#main-content" class="skip">Skip navigation</a>
   <header>
@@ -38,21 +67,43 @@
   </header>
   <div id="main-content" class="main-content main-content-home">
     <section class="crafts">
-    <div class="photo-grid">
-      <div class="photo-cell">
-        <a href="photography.html"><img class="resp-img" src="img/tokyo.jpg" alt="Photography"></a>
-        <h1>PHOTOGRAPHY COLLECTION</h1>
-      </div>
-      <div class="photo-cell">
-        <a href="travel.html"><img class="resp-img" src="img/map.jpg" alt="Travel"></a>
-        <h1>TRAIN TRAVEL</h1>
-      </div>
-      <div class="photo-cell">
-        <a href="about.html"><img class="resp-img" src="img/me.jpg" alt="About Me"></a>
-        <h1>ABOUT ME</h1>
-      </div>
+    <img class="megif" src="img/megif.gif" alt="Me">
+    <h3>Yaojia Hua</h3>
+    <div class="scroll">
+      <a href="#content"><img src="img/scrolldown.png" alt="scroll"></a>
     </div>
+
+    <div class="label"><a name="content">scroll</a></div>
+    <br><br><br><br><br>
+      <div class="photo-cell">
+        <a href="photography.html"><img class="left-img" id="c" src="img/tokyo.jpg" alt="Photography"></a>
+        <h1 class="right">PHOTOGRAPHY COLLECTION</h1>
+      </div>
+      <br><br><br><br>
+      <div class="photo-cell">
+        <a href="travel.html"><img class="right-img" id="c" src="img/map.jpg" alt="Travel"></a>
+        <h1 class="left">RAILWAY TRIP</h1>
+      </div>
+      <br><br><br><br>
+      <div class="photo-cell">
+        <a href="about.html"><img class="left-img" id="c" src="img/me.jpg" alt="About Me"></a>
+        <h1 class="right">ABOUT ME</h1>
+      </div>
+    <!-- </div> -->
   </section>
 </div>
+
+<footer>
+  <div class="footer">
+  <nav>
+    <p><a href="index.html">Home</a>
+    <a href="photography.html">Photography</a>
+    <a href="travel.html">Travel</a>
+    <a href="about.html">About</a></p>
+  </nav>
+  <p>&copy;2018 Yaojia Hua</p>
+</div>
+</footer>
+
 </body>
 </html>
