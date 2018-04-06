@@ -17,17 +17,18 @@
  }
  </script>
 <style>
-
+.me {
+  width: 100%;
+}
 #image{
-    	/* line-height:325px; */
-		  width: 450px;
+      line-height:1000px;
+      width: 450px;
     	height: 450px;
-		  /* border:5px solid black; */
 		  margin:0 auto;
     	background-repeat: no-repeat;
-    	/* color:#FFFFFF; */
+    	color:#DDDDDA;
     	text-align: center;
-    	/* background-color: #8e68ff; */
+      vertical-align: text-bottom;
       background-image: url("img/hover.png");
     	background-size: 100%;
     	margin-top:50px;
@@ -40,10 +41,6 @@
   a{
     color: #FF6969;
   }
-  /* #main-content h2 {
-    margin-top: 5%;
-    margin-bottom: 5%;
-  } */
   #main-content h1 {
 text-align: center;
 margin-left: 5%;
@@ -83,31 +80,30 @@ margin-bottom: 5%;
 
   <div id="main-content" class="main-content main-content-home">
     <h1>Hi, I'm Yao.</h1>
-      <h2>A <a href="http://www.yaojiahua.com/">UX designer</a> born and raised in <a href="https://en.wikipedia.org/wiki/Hangzhou">Hangzhou, China</a>.</h2>
-      <br><br>
-      <div class="photo-cell">
-        <img class="me" src="img/me2 copy.jpg" alt="Me"><br>
-      </div>
+    <h2>A <a href="http://www.yaojiahua.com/">UX designer</a> born and raised in <a href="https://en.wikipedia.org/wiki/Hangzhou">Hangzhou, China</a>.</h2>
     <br><br>
+    <img class="me" src="img/me2 copy.jpg" alt="Me"><br>
+    <br><br><br><br>
+
     <section class="crafts">
       <h2>Things I love:
-        <span class = "text" src="img/travel.jpg">travel</span>,
-        <span class = "text" src="img/guggenheim.jpg">museums</span>,
-        <span class = "text" src="img/bloom.jpg">dream pop</span>,
-        <span class = "text" src="img/stripes.jpg">stripes</span>,
-        <span class = "text" src="img/sushi.jpg">sushi</span>,
-        <span class = "text" src="img/pug.jpg">pugs</span>.</h2>
+        <span class = "text" src="img/travel.jpg" alt="Flight">travel</span>,
+        <span class = "text" src="img/guggenheim.jpg" alt="Solomon R. Guggenheim Museum">museums</span>,
+        <span class = "text" src="img/bloom.jpg" alt="Bloom - Beach House">dream pop</span>,
+        <span class = "text" src="img/stripes.jpg" alt="Stripes">stripes</span>,
+        <span class = "text" src="img/sushi.jpg" alt="Favorite Sushi Place">sushi</span>,
+        <span class = "text" src="img/pug.jpg" alt="A Pug on Instagram">pugs</span>.</h2>
     <div id="image"></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript">
 	$(document).ready(function() {
 		$(".text").on('focus mouseover', function() {
-			// $("#image").text($(this).attr("alt"));
+			$("#image").text($(this).attr("alt"));
 			$("#image").css('background-image', 'url("' + $(this).attr("src") +'")');
 		})
 		$(".text").on('blur mouseleave', function() {
-			// $("#image").text("Hover over an image below");
+			$("#image").text("");
 			$("#image").css('background-image', 'url(img/hover.png)');
 		})
 	});

@@ -45,6 +45,7 @@
   .photo-cell {
     margin-bottom: 6%;
     margin-top: 2%;
+    width: 1200px;
   }
   .photo-cell .left-img{
     width: 60%;
