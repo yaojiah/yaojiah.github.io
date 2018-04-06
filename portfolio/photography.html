@@ -8,10 +8,19 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css" charset="UTF-8">
   <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
-    <script src="js/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
+  <script src="js/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  // menu
+    function menu() {
+       var x = document.getElementById("dropdown");
+       if (x.style.display === "none") {
+           x.style.display = "block";
+       } else {
+           x.style.display = "none";
+       }
+     }
+   // slider
         jQuery(document).ready(function ($) {
-
             var jssor_1_options = {
               $AutoPlay: 1,
               $SlideWidth: 720,
@@ -22,37 +31,29 @@
                 $Class: $JssorBulletNavigator$
               }
             };
-
             var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
             /*#region responsive code begin*/
-
             var MAX_WIDTH = 1920;
-
             function ScaleSlider() {
                 var containerElement = jssor_1_slider.$Elmt.parentNode;
                 var containerWidth = containerElement.clientWidth;
-
                 if (containerWidth) {
-
                     var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
                     jssor_1_slider.$ScaleWidth(expectedWidth);
                 }
                 else {
                     window.setTimeout(ScaleSlider, 30);
                 }
             }
-
             ScaleSlider();
-
             $(window).bind("load", ScaleSlider);
             $(window).bind("resize", ScaleSlider);
             $(window).bind("orientationchange", ScaleSlider);
             /*#endregion responsive code end*/
         });
-    </script>
-    <style>
+  </script>
+
+  <style>
         /*jssor slider loading skin spin css*/
         .jssorl-009-spin img {
             animation-name: jssorl-009-spin;
@@ -65,41 +66,21 @@
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
         }
-
         /*jssor slider bullet skin 051 css*/
         .jssorb051 .i {position:absolute;cursor:pointer;}
         .jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
         .jssorb051 .i:hover .b {fill-opacity:.7;}
         .jssorb051 .iav .b {fill-opacity: 1;}
         .jssorb051 .i.idn {opacity:.3;}
-
         /*jssor slider arrow skin 051 css*/
         .jssora051 {display:block;position:absolute;cursor:pointer;}
         .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
         .jssora051:hover {opacity:.8;}
         .jssora051.jssora051dn {opacity:.5;}
         .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
-
-        #main-content h1 {
-  text-align: center;
-  margin-left: 5%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  font-size: 2em;
-}
-
-#main-content h2 {
-  text-align: center;
-}
-
-#main-content p {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-
-    </style>
+  </style>
 </head>
+
 <body>
   <a href="#main-content" class="skip">Skip navigation</a>
   <header>
@@ -118,14 +99,13 @@
       </div>
     </nav>
   </header>
-
-<!-- slideshow gallery -->
-<div id="main-content" class="main-content main-content-home">
-  <h1>I am an amateur photographer, playing with my <a>Fujifilm X-M1</a>.
-    <br><h2>Find me on <a href="https://www.flickr.com/photos/137759127@N08/">Flickr</a>, <a href="https://500px.com/huayao_jia?preview=1">500px</a>, and <a href=
-      "https://www.instagram.com/huayao_jia/">Instagram</a>.</h2>
-    <br><br>
-<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:480px;overflow:hidden;visibility:hidden;">
+ <!-- slideshow gallery -->
+ <div id="main-content" class="main-content main-content-home">
+   <h2 class="intro">I am an amateur photographer, playing with my <a>Fujifilm X-M1</a>.</h2>
+   <h3>Find me on <a href="https://www.flickr.com/photos/137759127@N08/">Flickr</a>, <a href="https://500px.com/huayao_jia?preview=1">500px</a>, and <a href=
+      "https://www.instagram.com/huayao_jia/">Instagram</a>.</h3>
+   <br><br><br>
+   <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:480px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
@@ -169,11 +149,10 @@
                 <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
             </svg>
         </div>
-    </div>
-    <!-- #endregion Jssor Slider End -->
-    <br><br><br><br>
-
-    <section class="crafts">
+   </div>
+   <!-- #endregion Jssor Slider End -->
+   <br><br><br><br>
+   <section class="crafts">
     <div class="photo-cell">
      <p>Seeing the world through my camera lens...</p>
       <img class="map" src="img/photo/tok.jpg" alt="Tokyo2"><br>
@@ -196,21 +175,21 @@
     <div class="photo-cell">
       <img class="r" src="img/photo/chi.jpg" alt="Chicago"><br>
     </div>
+   </section>
+ </div>
 
-    </section>
-</div>
-
-<footer>
+ <footer>
   <div class="footer">
-  <nav>
-    <p><a href="index.html">Home</a>
-    <a href="photography.html">Photography</a>
-    <a href="travel.html">Travel</a>
-    <a href="about.html">About</a></p>
-  </nav>
-  <p>&copy;2018 Yaojia Hua</p>
-</div>
-</footer>
+   <nav>
+     <p><a href="index.html">Home</a>
+     <a href="photography.html">Photography</a>
+     <a href="travel.html">Travel</a>
+     <a href="about.html">About</a></p>
+   </nav>
+   <p>&copy;2018 Yaojia Hua</p>
+  </div>
+ </footer>
 
 </body>
+
 </html>

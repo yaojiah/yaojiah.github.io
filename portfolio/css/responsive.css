@@ -16,16 +16,16 @@
     display: inline-block;
   }
 
- /* Home */
-
-  .photo-cell h1 {
+ /* page*/
+  h1 {
+    font-size: 4em;
+  }
+  .photo-cell h2 {
     text-align: right;
     font-size: 1.75em;
   }
 
-
 }
-
 
 
 
@@ -34,14 +34,10 @@
   .top-nav ul {
     text-align: right;
   }
-
-  /* Home */
-  h3 {
+ /* page */
+  h1 {
     font-size: 7em;
   }
-
-
-
   .photo-cell {
     margin-bottom: 6%;
     margin-top: 2%;
@@ -55,7 +51,7 @@
     width: 60%;
     margin-right: 3%;
   }
-  .photo-cell h1 {
+  .photo-cell h2 {
     position: absolute;
     bottom: 32%;
     font-size: 2.75em;
@@ -68,49 +64,47 @@
     right:54%;
     text-align: right;
   }
-
-  .photo-cell h2 {
+  .photo-cell h3 {
     position: absolute;
     bottom: 11%;
     font-size: 2.5em;
     right:60%;
   }
 
-
- /* About */
- /* .photo-cell .me {
-   width:64%;
- } */
-
- /* Travel */
- #player {
-   width: 50%;
- }
-
- .photo-cell p {
-   position: absolute;
-   bottom: 20%;
-   font-size: 1.5em;
-   left:3%;
-   width:36%;
- }
-
- .photo-cell .map {
-   width: 55%;
-   margin-right: 3%;
- }
- .photo-cell .l {
-   width: 75%;
-   margin-left: 3%;
- }
- .photo-cell .r {
-   width: 50%;
-   margin-right: 3%;
- }
- .photo-cell .f {
-   width: 94%;
-   margin-right: 3%;
-   margin-left: 3%;
- }
+ /* page intro */
+  .intro {
+    font-size: 2em;
+  }
+  #main-content h3 {
+    font-size: 1.5em;
+  }
+ /* travel & photography */
+  #player {
+    width: 50%;
+  }
+  .photo-cell p {
+    position: absolute;
+    bottom: 20%;
+    font-size: 1.5em;
+    left:3%;
+    width:36%;
+  }
+  .photo-cell .map {
+    width: 55%;
+    margin-right: 3%;
+  }
+  .photo-cell .l {
+    width: 75%;
+    margin-left: 3%;
+  }
+  .photo-cell .r {
+    width: 50%;
+    margin-right: 3%;
+  }
+  .photo-cell .f {
+    width: 94%;
+    margin-right: 3%;
+    margin-left: 3%;
+  }
 
 }

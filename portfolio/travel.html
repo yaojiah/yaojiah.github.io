@@ -7,49 +7,31 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css" charset="UTF-8">
   <script>
-  function menu() {
+   function menu() {
      var x = document.getElementById("dropdown");
      if (x.style.display === "none") {
          x.style.display = "block";
      } else {
          x.style.display = "none";
      }
- }
- </script>
- <style>
- .videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 10px;
-	height: 0;
-}
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
+    }
+  </script>
 
-#main-content h1 {
-  text-align: center;
-  margin-left: 5%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  font-size: 2em;
-}
-
-#main-content h2 {
-  text-align: center;
-}
-
-#main-content p {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-
- </style>
+  <style>
+   .videoWrapper {
+	  position: relative;
+	  padding-bottom: 56.25%; /* 16:9 */
+	  padding-top: 10px;
+	  height: 0;
+   }
+   .videoWrapper iframe {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+   }
+  </style>
 </head>
 
 <body>
@@ -70,17 +52,17 @@
     </nav>
   </header>
 
-
   <div id="main-content" class="main-content main-content-home">
-  <h1>This February, I took a solo railway trip from<br><a>Ann Arbor</a> to <a>San Francisco</a>.
-    <br><h2>Yes, I know I'm crazy.</h2>
-    <br><br>
-    <div class="videoWrapper">
-      <iframe src="https://player.vimeo.com/video/262669339" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-    <br><br><br><br>
 
-    <section class="crafts">
+  <h2 class="intro">This February, I took a solo railway trip from<br><a>Ann Arbor</a> to <a>San Francisco</a>.</h2>
+  <h3>Yes, I know I'm crazy.</h3>
+  <br><br><br>
+  <div class="videoWrapper">
+    <iframe src="https://player.vimeo.com/video/262669339" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+  <br><br><br><br>
+
+  <section class="crafts">
     <div class="photo-cell">
      <p>The train I ride is <a href="https://en.wikipedia.org/wiki/California_Zephyr">California Zephyr</a>, which runs daily between Chicago and Emeryville, via Omaha, Denver, Salt Lake City, and Reno.</p>
       <img class="map" src="img/map.jpg" alt="Map"><br>
@@ -103,12 +85,12 @@
     <div class="photo-cell">
       <img class="r" src="img/cz/6.jpg" alt="img6"><br>
     </div>
+  </section>
 
-    </section>
   </div>
 
   <footer>
-    <div class="footer">
+   <div class="footer">
     <nav>
       <p><a href="index.html">Home</a>
       <a href="photography.html">Photography</a>
@@ -116,7 +98,9 @@
       <a href="about.html">About</a></p>
 		</nav>
 		<p>&copy;2018 Yaojia Hua</p>
-  </div>
+   </div>
 	</footer>
 
 </body>
+
+</html>

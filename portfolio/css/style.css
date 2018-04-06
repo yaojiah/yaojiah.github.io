@@ -29,25 +29,19 @@ a.skip:active, a.skip:focus, a.skip:hover {
 	z-index: 999;
 }
 html, body, header, footer{
-    /* background-image: url("img/bg.png"); */
-    /* background-color: #ECECEA; */
   font-family: 'Ubuntu', sans-serif;
   margin: 0;
   padding: 0;
 }
-header, footer, .logo {
-	/* background-color: #211D24; */
+/* header, footer, .logo {
 	color: #DDDDDA;
-}
+} */
 body{
-  /* background-image: url("background.png"); */
-  /* background-repeat: repeat-y; */
-  /* background-color: #f5eded; */
   background-attachment: fixed;
   display: flex;
 	flex-direction: column;
 }
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3{
 	font-family: 'Ubuntu', sans-serif;
   color:#1b1515;
 }
@@ -57,22 +51,13 @@ p{
   color:#1b1515;
 }
 h1{
-	font-size: 1.75em;
+	font-size: 2.5em;
 }
 h2{
 	font-size: 1.5em;
 }
 h3{
-	font-size: 4em;
-}
-h4{
 	font-size: 1.12em;
-}
-h5{
-	font-size: .83em;
-}
-h6{
-	font-size: .75em;
 }
 .main-content{
 	flex: 1 0 auto;
@@ -176,6 +161,23 @@ header{
 }
 
 /*-----main content ------*/
+.intro {
+ text-align: center;
+ /* margin-left: 5%; */
+ margin-top: 5%;
+ margin-bottom: 5%;
+ /* font-size: 2em; */
+}
+
+#main-content h3 {
+ text-align: center;
+}
+
+#main-content p {
+ margin-top: 5%;
+ margin-bottom: 5%;
+}
+
 .main-content-crafts{
 	margin-top: 0px;
 }
