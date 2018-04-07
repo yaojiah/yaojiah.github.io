@@ -71,20 +71,20 @@
 
   <section class="crafts">
     <h3>Things I love:
-        <span><a class = "text" src="img/travel.jpg" alt="Flight">travel</a></span>,
-        <span><a class = "text" src="img/guggenheim.jpg" alt="Solomon R. Guggenheim Museum">museums</a></span>,
-        <span><a class = "text" src="img/bloom.jpg" alt="Bloom - Beach House">dream pop</a></span>,
-        <span><a class = "text" src="img/stripes.jpg" alt="Stripes">stripes</a></span>,
-        <span><a class = "text" src="img/sushi.jpg" alt="Favorite Sushi Place">sushi</a></span>,
-        <span><a class = "text" src="img/pug.jpg" alt="A Pug on Instagram">pugs</a></span>.</h3>
+        <span class = "text" data-src="img/travel.jpg" data-alt="Flight">travel</span>,
+        <span class = "text" data-src="img/guggenheim.jpg" data-alt="Solomon R. Guggenheim Museum">museums</span>,
+        <span class = "text" data-src="img/bloom.jpg" data-alt="Bloom - Beach House">dream pop</span>,
+        <span class = "text" data-src="img/stripes.jpg" data-alt="Stripes">stripes</span>,
+        <span class = "text" data-src="img/sushi.jpg" data-alt="Favorite Sushi Place">sushi</span>,
+        <span class = "text" data-src="img/pug.jpg" data-alt="A Pug on Instagram">pugs</span>.</h3>
    <div id="image"></div>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   <script type="text/javascript">
+   <script>
 	 $(document).ready(function() {
 		 $(".text").on('focus mouseover', function() {
-			 $("#image").text($(this).attr("alt"));
-			 $("#image").css('background-image', 'url("' + $(this).attr("src") +'")');
+			 $("#image").text($(this).attr("data-alt"));
+			 $("#image").css('background-image', 'url("' + $(this).attr("data-src") +'")');
 		 })
 		 $(".text").on('blur mouseleave', function() {
 			 $("#image").text("");
