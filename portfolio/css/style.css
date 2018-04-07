@@ -198,18 +198,6 @@ header{
   margin: 0 auto;
 }
 
-.photo-cell #c {
-  filter: sepia() saturate(1) hue-rotate(310deg);
-  background-blend-mode: lighten;
-  opacity: 1;
-  box-shadow: 10pt 15pt 20pt rgba(104, 103, 103, .5);
-}
-
-.photo-cell #c:hover {
-  filter: none;
-  opacity: 1;
-}
-
 
 .photo-cell h1 {
   text-align: right;

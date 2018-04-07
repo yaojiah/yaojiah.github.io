@@ -4,8 +4,8 @@
   <title> Home ~ Yaojia Hua </title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" type="text/css" href="css/style.css" charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css" charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css" >
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" >
   <script>
   function menu() {
      var x = document.getElementById("dropdown");
@@ -41,6 +41,17 @@
     padding-bottom: 12%;
     position: relative;
   }
+  .photo-cell img {
+    filter: sepia() saturate(1) hue-rotate(310deg);
+    background-blend-mode: lighten;
+    opacity: 1;
+    box-shadow: 10pt 15pt 20pt rgba(104, 103, 103, .5);
+  }
+
+  .photo-cell img:hover {
+    filter: none;
+    opacity: 1;
+  }
   </style>
 </head>
 
@@ -51,7 +62,7 @@
 			<div class="logo">
         <a href="index.html"> <img src="img/HUA.png" alt="yaojia's logo"></a>
       </div>
-        <img class="menu" src="img/menu.png" onclick="menu()">
+        <img class="menu" src="img/menu.png" alt="menu" onclick="menu()">
         <div id="dropdown">
           <ul>
             <li><a class="current-page" href="index.html">Home</a></li>
@@ -73,17 +84,17 @@
       <div class="label"><a name="content">scroll</a></div>
       <br><br><br><br><br>
       <div class="photo-cell">
-        <a href="photography.html"><img class="left-img" id="c" src="img/tokyo.jpg" alt="Photography"></a>
+        <a href="photography.html"><img class="left-img" src="img/tokyo.jpg" alt="Photography"></a>
         <h2 class="right">PHOTOGRAPHY COLLECTION</h2>
       </div>
       <br><br><br><br>
       <div class="photo-cell">
-        <a href="travel.html"><img class="right-img" id="c" src="img/map.jpg" alt="Travel"></a>
+        <a href="travel.html"><img class="right-img" src="img/map.jpg" alt="Travel"></a>
         <h2 class="left">RAILWAY TRIP</h2>
       </div>
       <br><br><br><br>
       <div class="photo-cell">
-        <a href="about.html"><img class="left-img" id="c" src="img/me.jpg" alt="About Me"></a>
+        <a href="about.html"><img class="left-img" src="img/me.jpg" alt="About Me"></a>
         <h2 class="right">ABOUT ME</h2>
       </div>
     </section>
