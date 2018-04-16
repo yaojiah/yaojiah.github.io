@@ -1,0 +1,13 @@
+@media only screen and (min-width: 650px) {
+  .mediaquery {
+    background-color: #79e712;
+    font-family: cursive;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .mediaquery {
+    background-color: #6214a1;
+    font-family: monospace;
+  }
+}

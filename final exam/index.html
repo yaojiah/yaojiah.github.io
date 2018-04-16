@@ -1,0 +1,66 @@
+<DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>HHHHH</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+  	<link rel="stylesheet" type="text/css" href="css/responsive.css" >
+    <script>
+      function trigger() {
+        var x = document.getElementById("v");
+        if (x.style.visibility === "visible") {
+          x.style.visibility = "hidden";
+        } else {
+          x.style.visibility = "visible";
+        }
+      }
+      function trigger2() {
+        document.getElementById("c").innerHTML="Shut UP!"；
+      }
+    </script>
+    <style>
+      #v {
+        visibility: visible;
+      }
+      .trigger{
+        width: 100px;
+        height: 50px;
+        background-color: #13f191;
+      }
+      .trigger2{
+        width: 100px;
+        height: 50px;
+        background-color: #1934fa;
+      }
+      #c {
+        color: #ae1481;
+      }
+    </style>
+
+
+  </head>
+
+  <body>
+    <div class="photo">
+      <img src="img/design.jpg" alt="design">
+    </div>
+    <div class="mediaquery">
+      <p id="content">HHHHH</p>
+    </div>
+    <div class="visibility">
+      <div class="trigger" onclick="trigger()">
+        <p>show/hide</p>
+      </div>
+      <img id="v" src="img/2.jpg" alt="design2">
+    </div>
+    <div class="content">
+      <div class="trigger2" onclick="trigger2()">
+        <p>change</p>
+      </div>
+      <h1 id="c">Ahaaaaaaaaaa!</h1>
+    </div>
+    <div class="square1"></div>
+    <div class="square2"></div>
+  </body>
+</html>

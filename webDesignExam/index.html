@@ -1,0 +1,32 @@
+<DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Yaojia Hua Exam</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+
+    <script>
+      function hide() {
+        document.getElementById("img1").style.display="none";
+        document.getElementById("img2").style.display="block";
+        document.getElementById("img2").style.margin="0 auto";
+      }
+      function show() {
+        document.getElementById("img1").style.display="inline-block";
+        document.getElementById("img2").style.display="inline-block";
+
+      }
+    </script>
+
+  </head>
+
+  <body>
+    <h1>Yaojia Hua</h1>
+    <img id="img1" src="images/examPic.JPG" alt="img1"><img id="img2" src="images/UMSI-logo.jpg" alt="img2">
+    <div class="buttons">
+    <button type="button" onclick="hide()">Hide Image</button>
+    <button type="button" onclick="show()">Show Image</button>
+  </div>
+
+  </body>
+</html>

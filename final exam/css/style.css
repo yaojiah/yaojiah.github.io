@@ -1,0 +1,27 @@
+.photo {
+  position: relative;
+}
+.photo img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.mediaquery {
+  width: 100px;
+  height: 100px;
+  background-color: #000000;
+  font-family: serif;
+  color: #FFFFFF;
+}
+.square1 {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-color: #585858;
+}
+.square2 {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-color: #623814;
+}
